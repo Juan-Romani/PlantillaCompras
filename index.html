@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mi Empresa</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Logo</div>
+    <h1>Mi Empresa</h1>
+    <nav>
+      <ul>
+        <li onclick="showContent('inicio')">Inicio</li>
+        <li onclick="showContent('nosotros')">Sobre Nosotros</li>
+        <li onclick="showContent('productos')">Productos</li>
+        <li onclick="showContent('contacto')">Contactanos</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="inicio" class="content">
+    <!-- Contenido del inicio -->
+    <h2>Bienvenido a Mi Empresa</h2>
+    <p>Contenido del inicio...</p>
+  </div>
+
+  <div id="nosotros" class="content">
+    <!-- Contenido sobre nosotros -->
+    <h2>Sobre Nosotros</h2>
+    <p>Información sobre la empresa...</p>
+  </div>
+
+  <div id="productos" class="content">
+    <!-- Contenido de productos -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar...">
+      <button id="searchButton" onclick="search()">Buscar</button>
+  </div>
+
+  <section id="productContainer" class="product-container">
+
+      <div class="product" data-product="1">
+        <img src="producto1.jpg" alt="Producto 1">
+        <h2>Nombre del Producto 1</h2>
+        <p>Descripción del Producto 1.</p>
+      </div>
+      
+      <div class="product" data-product="2">
+        <img src="producto2.jpg" alt="Producto 2">
+        <h2>Nombre del Producto 2</h2>
+        <p>Descripción del Producto 2.</p>
+      </div>
+      
+      <div class="product" data-product="3">
+        <img src="producto3.jpg" alt="Producto 3">
+        <h2>Nombre del Producto 3</h2>
+        <p>Descripción del Producto 3.</p>
+      </div>
+      
+      <div class="product" data-product="4">
+        <img src="producto4.jpg" alt="Producto 4">
+        <h2>Nombre del Producto 4</h2>
+        <p>Descripción del Producto 4.</p>
+      </div>
+      
+      <div class="product" data-product="5">
+        <img src="producto5.jpg" alt="Producto 5">
+        <h2>Nombre del Producto 5</h2>
+        <p>Descripción del Producto 5.</p>
+      </div>
+      
+      <div class="product" data-product="6">
+        <img src="producto6.jpg" alt="Producto 6">
+        <h2>Nombre del Producto 6</h2>
+        <p>Descripción del Producto 6.</p>
+      </div>
+      
+      <div class="product" data-product="7">
+        <img src="producto7.jpg" alt="Producto 7">
+        <h2>Nombre del Producto 7</h2>
+        <p>Descripción del Producto 7.</p>
+      </div>
+      
+      <div class="product" data-product="8">
+        <img src="producto8.jpg" alt="Producto 8">
+        <h2>Nombre del Producto 8</h2>
+        <p>Descripción del Producto 8.</p>
+      </div>
+      
+      <div class="product" data-product="9">
+        <img src="producto9.jpg" alt="Producto 9">
+        <h2>Nombre del Producto 9</h2>
+        <p>Descripción del Producto 9.</p>
+      </div>
+      
+      <div class="product" data-product="10">
+        <img src="producto10.jpg" alt="Producto 10">
+        <h2>Nombre del Producto 10</h2>
+        <p>Descripción del Producto 10.</p>
+      </div>
+      
+      <div class="product" data-product="11">
+        <img src="producto11.jpg" alt="Producto 11">
+        <h2>Nombre del Producto 11</h2>
+        <p>Descripción del Producto 11.</p>
+      </div>
+      
+      <div class="product" data-product="12">
+        <img src="producto12.jpg" alt="Producto 12">
+        <h2>Nombre del Producto 12</h2>
+        <p>Descripción del Producto 12.</p>
+      </div>
+      
+      <div class="product" data-product="13">
+        <img src="producto13.jpg" alt="Producto 13">
+        <h2>Nombre del Producto 13</h2>
+        <p>Descripción del Producto 13.</p>
+      </div>
+      
+      <div class="product" data-product="14">
+        <img src="producto14.jpg" alt="Producto 14">
+        <h2>Nombre del Producto 14</h2>
+        <p>Descripción del Producto 14.</p>
+      </div>
+      
+      <div class="product" data-product="15">
+        <img src="producto15.jpg" alt="Producto 15">
+        <h2>Nombre del Producto 15</h2>
+        <p>Descripción del Producto 15.</p>
+      </div>
+      
+      <div class="product" data-product="16">
+        <img src="producto16.jpg" alt="Producto 16">
+        <h2>Nombre del Producto 16</h2>
+        <p>Descripción del Producto 16.</p>
+      </div>
+      
+      <div class="product" data-product="17">
+        <img src="producto17.jpg" alt="Producto 17">
+        <h2>Nombre del Producto 17</h2>
+        <p>Descripción del Producto 17.</p>
+      </div>
+      
+      <div class="product" data-product="18">
+        <img src="producto18.jpg" alt="Producto 18">
+        <h2>Nombre del Producto 18</h2>
+        <p>Descripción del Producto 18.</p>
+      </div>
+      
+      <div class="product" data-product="19">
+        <img src="producto19.jpg" alt="Producto 19">
+        <h2>Nombre del Producto 19</h2>
+        <p>Descripción del Producto 19.</p>
+      </div>
+      
+      <div class="product" data-product="20">
+        <img src="producto20.jpg" alt="Producto 20">
+        <h2>Nombre del Producto 20</h2>
+        <p>Descripción del Producto 20.</p>
+      </div>
+      
+      <div class="product" data-product="21">
+        <img src="producto21.jpg" alt="Producto 21">
+        <h2>Nombre del Producto 21</h2>
+        <p>Descripción del Producto 21.</p>
+      </div>
+      
+      <div class="product" data-product="22">
+        <img src="producto22.jpg" alt="Producto 22">
+        <h2>Nombre del Producto 22</h2>
+        <p>Descripción del Producto 22.</p>
+      </div>
+      
+      <div class="product" data-product="23">
+        <img src="producto23.jpg" alt="Producto 23">
+        <h2>Nombre del Producto 23</h2>
+        <p>Descripción del Producto 23.</p>
+      </div>
+      
+      <div class="product" data-product="24">
+        <img src="producto24.jpg" alt="Producto 24">
+        <h2>Nombre del Producto 24</h2>
+        <p>Descripción del Producto 24.</p>
+      </div>
+      
+      <div class="product" data-product="25">
+        <img src="producto25.jpg" alt="Producto 25">
+        <h2>Nombre del Producto 25</h2>
+        <p>Descripción del Producto 25.</p>
+      </div>
+      
+      <div class="product" data-product="26">
+        <img src="producto26.jpg" alt="Producto 26">
+        <h2>Nombre del Producto 26</h2>
+        <p>Descripción del Producto 26.</p>
+      </div>
+      
+      <div class="product" data-product="27">
+        <img src="producto27.jpg" alt="Producto 27">
+        <h2>Nombre del Producto 27</h2>
+        <p>Descripción del Producto 27.</p>
+      </div>
+      
+      <div class="product" data-product="28">
+        <img src="producto28.jpg" alt="Producto 28">
+        <h2>Nombre del Producto 28</h2>
+        <p>Descripción del Producto 28.</p>
+      </div>
+      
+      <div class="product" data-product="29">
+        <img src="producto29.jpg" alt="Producto 29">
+        <h2>Nombre del Producto 29</h2>
+        <p>Descripción del Producto 29.</p>
+      </div>
+      
+      <div class="product" data-product="30">
+        <img src="producto30.jpg" alt="Producto 30">
+        <h2>Nombre del Producto 30</h2>
+        <p>Descripción del Producto 30.</p>
+      </div>
+      
+    </section>
+
+    <div class="navigation-buttons">
+      <button onclick="showPreviousProducts()">Anterior</button>
+      <button onclick="showNextProducts()">Siguiente</button>
+  </div>
+    
+  </div>
+
+<div id="contacto" class="content">
+  <h2>Contactanos</h2>
+  <ul>
+    <li><a href="mailto:correo@miempresa.com"><img src="mail.png" alt="Mail"> correo@miempresa.com</a></li>
+    <li><a href="https://wa.me/+123456789"><img src="whatsapp.png" alt="WhatsApp"> +123456789</a></li>
+    <li><a href="https://www.instagram.com/miempresa/"><img src="instagram.png" alt="Instagram"> @miempresa</a></li>
+    <li><a href="https://www.facebook.com/miempresa/"><img src="facebook.png" alt="Facebook"> /miempresa</a></li>
+  </ul>
+</div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2023 MI EMPRESA. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="producto.js"></script>
+
+  
+</body>
+</html>
